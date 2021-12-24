@@ -43,7 +43,7 @@ onMounted(() => {
   spec.value?.colorize('fill', '#fff')
   spec.value?.resize(600, 300)
   slider.value?.resize(600, 20)
-  spec.value?.connect(filter)
+  spec.value?.connect(Tone.Destination)
 })
 onUnmounted(() => {
   synth.dispose()

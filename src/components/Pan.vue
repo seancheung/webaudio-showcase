@@ -11,7 +11,7 @@ interface Props extends ControlProps {
 const props = defineProps<Props>()
 
 const emits = defineEmits<{
-  (event: 'change', value: number): void
+  (event: 'change', value: PanValue): void
 }>()
 
 const { id, exposes } = useControl(Pan, {
@@ -25,4 +25,5 @@ import { IControl, useControl, ControlProps } from './nexus'
 export interface IPan extends IControl {
 
 }
+export interface PanValue { value: number; L: number; R: number }
 </script>

@@ -14,6 +14,10 @@ const routes: RouteRecordRaw[] = [
     component: () => import("./chapters/Pitch.vue"),
   },
   {
+    path: "/panning",
+    component: () => import("./chapters/Panning.vue"),
+  },
+  {
     path: "/filter",
     component: () => import("./chapters/Filter.vue"),
   },

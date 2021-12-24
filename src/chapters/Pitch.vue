@@ -26,7 +26,7 @@ onMounted(() => {
   synth.toDestination()
   osc.value?.colorize('fill', '#fff')
   osc.value?.resize(600, 300)
-  osc.value?.connect(synth)
+  osc.value?.connect(Tone.Destination)
 })
 onUnmounted(() => {
   synth.dispose()

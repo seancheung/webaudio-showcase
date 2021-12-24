@@ -3,6 +3,7 @@
     <div class="menu">
       <router-link to="/amplitude">音量</router-link>
       <router-link to="/pitch">音高</router-link>
+      <router-link to="/panning">声像</router-link>
       <router-link to="/waveform">基本波形</router-link>
       <router-link to="/filter">滤波器</router-link>
       <router-link to="/envelope">包络</router-link>

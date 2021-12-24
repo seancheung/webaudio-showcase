@@ -68,7 +68,7 @@ onMounted(() => {
   synth.toDestination()
   spec.value?.colorize('fill', '#fff')
   spec.value?.resize(600, 300)
-  spec.value?.connect(synth)
+  spec.value?.connect(Tone.Destination)
 })
 onUnmounted(() => {
   synth.dispose()

@@ -19,7 +19,7 @@ defineExpose(exposes)
 <script lang="ts">
 import { IControl, useControl, ControlProps } from './nexus'
 export interface IOscilloscope extends IControl {
-  connect(source?: any): void
+  connect(source: any): void
   disconnect(): void
 }
 </script>

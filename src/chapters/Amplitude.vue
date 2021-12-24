@@ -40,7 +40,7 @@ onMounted(() => {
   osc.value?.colorize('fill', '#fff')
   osc.value?.resize(600, 300)
   slider.value?.resize(600, 20)
-  osc.value?.connect(synth)
+  osc.value?.connect(Tone.Destination)
 })
 onUnmounted(() => {
   synth.dispose()
